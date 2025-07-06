@@ -5,97 +5,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tribute Sign up</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <a target="_blank" href="Home.html">Home</a>
-           &nbsp;
-            <a target="_blank" href="About.html">About</a>
-           &nbsp;
-            <a target="_blank" href="Contact me.html">Contact me</a>
-            &nbsp; &nbsp;
-            <a href="login.html">Login</a>
-            &nbsp; &nbsp;
-            <a href="index.html">Sign Up</a>
-        </nav>
-    </header>
-    <div>
-        <div>
-            <center>
-                <h3>
-                    <b>SIGN UP TO LEARN BD</b>
-                </h3>
-            </center>
-        </div>
-        <!-- <br> -->
-        <br>
+    <nav>
+        <a target="_blank" href="Home.html">Home</a>&nbsp;
+        <a target="_blank" href="About.html">About</a>&nbsp;
+        <a target="_blank" href="Contact me.html">Contact me</a>&nbsp;&nbsp;
+        <a href="login.html">Login</a>&nbsp;&nbsp;
+        <a href="index.html">Sign Up</a>
+    </nav>
+</header>
+
+<div style="text-align: center;">
+    <h3><b>SIGN UP TO LEARN BD</b></h3>
+
+    <form action="#" method="post">
         <!-- Name -->
         <div>
-            <center>
-                <form action="">
-                    <label for="Name">What's your name?</label>
-                    <br>
-                    <input type="text" style="height: 40px; width: 350px;" placeholder="Name">
-                </form>
-            </center>
+            <label for="name">What's your name?</label><br>
+            <input type="text" id="name" name="name" placeholder="Name" 
+                   style="height: 40px; width: 350px;" required>
         </div>
         <br>
-        <!-- e-mail -->
+
+        <!-- Email -->
         <div>
-            <center>
-                <form action="">
-                    <label for="E-mail">What's your e-mail?</label>
-                    <br>
-                    <input type="email" style="height: 40px; width: 350px;" placeholder="E-mail">
-                </form>
-            </center>
+            <label for="email">What's your e-mail?</label><br>
+            <input type="email" id="email" name="email" placeholder="E-mail" 
+                   style="height: 40px; width: 350px;" required>
         </div>
         <br>
+
         <!-- Password -->
         <div>
-            <center>
-                <form action="">
-                    <label for="Password">Your Password</label>
-                    <br>
-                    <input type="password" style="height: 40px; width: 350px;" placeholder="Password">
-                </form>
-            </center>
+            <label for="password">Your Password</label><br>
+            <input type="password" id="password" name="password" placeholder="Password" 
+                   style="height: 40px; width: 350px;" required>
         </div>
         <br>
-        <!-- Phone number -->
+
+        <!-- Phone Number -->
         <div>
-            <center>
-                <form action="">
-                    <label for="Number">Phone Number</label>
-                    <br>
-                    <input type="number" style="height: 40px; width: 350px;" placeholder="+88xxxxxxxxx">
-                </form>
-            </center>
+            <label for="phone">Phone Number</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="+88xxxxxxxxx" 
+                   style="height: 40px; width: 350px;" pattern="^\+88[0-9]{10}$" required>
         </div>
         <br>
-        <!-- button -->
+
+        <!-- Submit Button -->
         <div>
-            <center>
-                <button type="submit" style="height: 40px; width: 350px;">
-                    Start your learning journey
-                </button>
-            </center>
+            <button type="submit" style="height: 40px; width: 350px;">
+                Start your learning journey
+            </button>
         </div>
-        <br>
-        <br>
-        <!-- sign in  -->
-        <div>
-            <center>
-                <nav>
-                    <a href="login.html">Sign in with your account</a>
-                    &nbsp; &nbsp; &nbsp;
-                    <a href="forgot.html">Forgot your password?</a>
-                </nav>
-            </center>
-        </div>
+    </form>
+
+    <br><br>
+
+    <!-- Sign in and Forgot Password Links -->
+    <div>
+        <nav>
+            <a href="login.html">Sign in with your account</a>&nbsp;&nbsp;&nbsp;
+            <a href="forgot.html">Forgot your password?</a>
+        </nav>
     </div>
+</div>
+
 </body>
 
 </html>
